@@ -1,6 +1,7 @@
 <template> 
-    <h3>This is the Profit Page</h3>
+    <h1>View Your Profits</h1>
     <ProfitDisplay/>
+    
 </template>
 
 <script>

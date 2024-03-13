@@ -1,5 +1,5 @@
 <template> 
-    <h1> Welcome to the CPP </h1>
+    <h1> Welcome to Crypto Track </h1>
 </template> 
 
 <script> 
@@ -10,7 +10,6 @@ export default {
 
 <style scoped>
 h1{
-    background-color:cornflowerblue;
     text-align: center;
     width: 100%;
 }

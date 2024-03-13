@@ -1,5 +1,5 @@
 <template>
-    <h1 id="Current"> Current Portfolio </h1> 
+    <h2 id="Current"> Current Portfolio </h2> 
 
     <table id="table"> 
         <tr>
