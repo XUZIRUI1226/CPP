@@ -1,20 +1,22 @@
 <template>
-    <h2 id="Current"> Current Portfolio </h2> 
+    <div class="overall">
+        <h2 id="Current"> Current Portfolio </h2> 
 
-    <table id="table"> 
-        <tr>
-            <th>S.no</th>
-            <th>Coin</th>
-            <th>Ticker</th>
-            <th>Buy_Price</th>
-            <th>Buy_Quantity</th>
-            <th>Current_Price</th>
-            <th>Profit</th>
-            <th>Options</th>
-        </tr>
-    </table> <br><br>
+        <table id="table"> 
+            <tr>
+                <th>S.no</th>
+                <th>Coin</th>
+                <th>Ticker</th>
+                <th>Buy_Price</th>
+                <th>Buy_Quantity</th>
+                <th>Current_Price</th>
+                <th>Profit</th>
+                <th>Options</th>
+            </tr>
+        </table> <br><br>
 
-    <h2 id = "totalProfit"> TP </h2>
+        <h2 id = "totalProfit"> TP </h2>
+    </div>
 </template>
 
 <script>
@@ -103,12 +105,14 @@
 </script>
 
 <style scoped>
-h1,h2{
+
+.overall{
+    background-color: white;
+}
+h2{
     text-align: center;
     background:cornflowerblue;
-    font:700;
     display: block;
-    font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -120,15 +124,16 @@ table{
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  border: 2px black;
+  margin: 0 auto;
 }
 
 tr:nth-child(even) {
   background-color: lightblue;
+  border: 2px black; 
 }
 
 th,td{
-  border: 1px solid black !important;
+  border: 1px solid black;
   text-align: center;
   padding: 8px;
 }
@@ -137,5 +142,6 @@ button.bwt{
     color: black;
     background-color: orange;
     text-align: center;
+    border-radius: 5px;
 }
 </style>

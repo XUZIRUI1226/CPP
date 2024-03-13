@@ -29,3 +29,10 @@ export default {
   }
 }
 </script>
+
+<style> 
+#bg {
+  position: relative;
+  background-color: white;
+}
+</style>

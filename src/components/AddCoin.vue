@@ -64,6 +64,8 @@
 <style scoped> 
 .container{
     width: 100%;
+    position: relative;
+    background-color: white;
 }
 
 h2{
