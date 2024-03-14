@@ -24,6 +24,7 @@ export default {
   },
   methods:{
     change(){
+      console.log("change is called");
       this.refreshComp += 1
     }
   }

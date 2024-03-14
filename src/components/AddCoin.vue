@@ -49,7 +49,9 @@
                         Coin: coin, Ticker: ticker, Buy_Price: buyPrice, Buy_Quantity: buyQuantity
                     })
                     console.log(docRef)
+                    console.log("Before form resets");
                     document.getElementById('myform').reset();
+                    console.log("After form resets");
                     this.$emit("added")
                 }
                 catch(error) {

@@ -1,22 +1,20 @@
 <template>
-    <div class="overall">
-        <h2 id="Current"> Current Portfolio </h2> 
+    <h1 id="Current"> Current Portfolio </h1> 
 
-        <table id="table"> 
-            <tr>
-                <th>S.no</th>
-                <th>Coin</th>
-                <th>Ticker</th>
-                <th>Buy_Price</th>
-                <th>Buy_Quantity</th>
-                <th>Current_Price</th>
-                <th>Profit</th>
-                <th>Options</th>
-            </tr>
-        </table> <br><br>
+    <table id="table"> 
+        <tr>
+            <th>S.no</th>
+            <th>Coin</th>
+            <th>Ticker</th>
+            <th>Buy_Price</th>
+            <th>Buy_Quantity</th>
+            <th>Current_Price</th>
+            <th>Profit</th>
+            <th>Options</th>
+        </tr>
+    </table> <br><br>
 
-        <h2 id = "totalProfit"> TP </h2>
-    </div>
+    <h2 id = "totalProfit"> Total Profit is : $0 </h2>
 </template>
 
 <script>
@@ -93,7 +91,7 @@
             await deleteDoc(doc(db, "Portfolio", coin))
             console.log("Document successfully deleted!", coin);
             let tb = document.getElementById("table")
-            while (tb.rows.length < 1) {
+            while (tb.rows.length > 1) {
                 tb.deleteRow(1)
                 }
             document.getElementById("totalProfit").innerHTML = ""
@@ -101,7 +99,6 @@
         }
     }
 }
-
 </script>
 
 <style scoped>
